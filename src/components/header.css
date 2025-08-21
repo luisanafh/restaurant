@@ -35,7 +35,6 @@
 	transition: text-shadow 0.3s ease;
 }
 
-/* Estilos para botones de redes sociales */
 .social-btn {
 	display: flex;
 	align-items: center;
@@ -54,7 +53,6 @@
 	box-shadow: 0 0 10px rgba(230, 195, 93, 0.7);
 }
 
-/* Estilos para el botón de WhatsApp */
 .whatsapp-btn {
 	display: flex;
 	align-items: center;
@@ -76,7 +74,6 @@
 	box-shadow: 0 0 15px rgba(230, 195, 93, 0.7);
 }
 
-/* Breakpoint para dispositivos muy pequeños (menos de 400px) */
 @media (max-width: 400px) {
 	.elegant-gold {
 		font-size: 1.2rem;
@@ -93,7 +90,6 @@
 	}
 }
 
-/* Versión tablet */
 @media (min-width: 640px) {
 	.social-btn {
 		width: 32px;
@@ -108,7 +104,6 @@
 	}
 }
 
-/* Versión desktop */
 @media (min-width: 768px) {
 	.social-btn {
 		width: 36px;
@@ -121,7 +116,6 @@
 	}
 }
 
-/* Breakpoint extra pequeño para dispositivos como iPhone 5/SE */
 @media (max-width: 320px) {
 	.elegant-gold {
 		font-size: 1rem;
@@ -136,8 +130,6 @@
 		padding: 3px 5px;
 		font-size: 0.65rem;
 	}
-
-	/* Reducir aún más el espaciado entre elementos */
 	.flex.items-center.gap-1 {
 		gap: 0.25rem;
 	}
