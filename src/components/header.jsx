@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
-import './Header.css';
+import './header.css';
 
 function Header() {
 	return (
