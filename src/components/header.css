@@ -35,16 +35,17 @@
 	transition: text-shadow 0.3s ease;
 }
 
+/* Estilos para botones de redes sociales */
 .social-btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 32px;
-	height: 32px;
+	width: 28px;
+	height: 28px;
 	background: linear-gradient(to right, #e6c35d, #d4af37);
 	border-radius: 50%;
 	transition: all 0.3s ease;
-	border: 2px solid #b8860b;
+	border: 1.5px solid #b8860b;
 }
 
 .social-btn:hover {
@@ -53,19 +54,20 @@
 	box-shadow: 0 0 10px rgba(230, 195, 93, 0.7);
 }
 
+/* Estilos para el botón de WhatsApp */
 .whatsapp-btn {
 	display: flex;
 	align-items: center;
-	gap: 6px;
-	padding: 8px 12px;
+	gap: 4px;
+	padding: 6px 10px;
 	background: linear-gradient(to right, #e6c35d, #d4af37);
 	color: #000;
-	border-radius: 20px;
+	border-radius: 18px;
 	font-weight: bold;
 	transition: all 0.3s ease;
-	border: 2px solid #b8860b;
+	border: 1.5px solid #b8860b;
 	white-space: nowrap;
-	font-size: 0.875rem;
+	font-size: 0.75rem;
 }
 
 .whatsapp-btn:hover {
@@ -74,7 +76,40 @@
 	box-shadow: 0 0 15px rgba(230, 195, 93, 0.7);
 }
 
+/* Breakpoint para dispositivos muy pequeños (menos de 400px) */
+@media (max-width: 400px) {
+	.elegant-gold {
+		font-size: 1.2rem;
+	}
+
+	.social-btn {
+		width: 24px;
+		height: 24px;
+	}
+
+	.whatsapp-btn {
+		padding: 4px 6px;
+		font-size: 0.7rem;
+	}
+}
+
+/* Versión tablet */
 @media (min-width: 640px) {
+	.social-btn {
+		width: 32px;
+		height: 32px;
+		border: 2px solid #b8860b;
+	}
+
+	.whatsapp-btn {
+		padding: 8px 14px;
+		font-size: 0.9rem;
+		border: 2px solid #b8860b;
+	}
+}
+
+/* Versión desktop */
+@media (min-width: 768px) {
 	.social-btn {
 		width: 36px;
 		height: 36px;
@@ -86,25 +121,24 @@
 	}
 }
 
-@media (min-width: 768px) {
-	.social-btn {
-		width: 40px;
-		height: 40px;
-	}
-}
-
-@media (max-width: 340px) {
+/* Breakpoint extra pequeño para dispositivos como iPhone 5/SE */
+@media (max-width: 320px) {
 	.elegant-gold {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 
 	.social-btn {
-		width: 28px;
-		height: 28px;
+		width: 22px;
+		height: 22px;
 	}
 
 	.whatsapp-btn {
-		padding: 6px 8px;
-		font-size: 0.75rem;
+		padding: 3px 5px;
+		font-size: 0.65rem;
+	}
+
+	/* Reducir aún más el espaciado entre elementos */
+	.flex.items-center.gap-1 {
+		gap: 0.25rem;
 	}
 }
